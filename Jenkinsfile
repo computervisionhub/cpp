@@ -3,9 +3,9 @@ pipeline{
 	stages{	
 		stage('Build'){
 			steps{
-				bash 'echo "building.."'
-				bash 'pwd'
-				bash ls
+				sh 'echo "building.."'
+				sh 'pwd'
+				sh ls
 			}
 		}
 	}
