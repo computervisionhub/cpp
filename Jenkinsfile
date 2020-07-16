@@ -5,7 +5,7 @@ pipeline{
 			steps{
 				sh 'echo "building.."'
 				sh 'pwd'
-				sh ls
+				sh 'ls'
 			}
 		}
 	}
