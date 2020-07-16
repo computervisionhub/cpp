@@ -1,13 +1,12 @@
 pipeline{
-	agent any
-	stage('Build'){
-	steps{
-		bash 'echo "building.."'
-                bash 'pwd'
-                bash ls
+  	agent any
+	stages{	
+		stage('Build'){
+			steps{
+				bash 'echo "building.."'
+				bash 'pwd'
+				bash ls
+			}
+		}
 	}
-	}
-
-
-
 }
