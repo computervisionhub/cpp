@@ -16,7 +16,7 @@ pipeline{
 		stage('Test'){
 			steps{
 				sh 'echo "testing.."'
-				sh 'bash ./jenkins_calculator/build/calculator'
+				sh './jenkins_calculator/build/calculator'
 			}
 		}
 	}
