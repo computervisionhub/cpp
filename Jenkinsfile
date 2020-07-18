@@ -8,7 +8,7 @@ pipeline{
 				sh 'ls'
 				sh 'cd jenkins_calculator'
 				sh 'ls'
-				sh 'bash jenkins_calculator/build.sh'
+				sh 'bash cmake_build.sh'
 			}
 		}
 	}
