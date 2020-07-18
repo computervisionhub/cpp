@@ -7,7 +7,8 @@ pipeline{
 				sh 'pwd'
 				sh 'ls'
 				sh 'cd jenkins_calculator'
-				sh 'bash build.sh'
+				sh 'ls'
+				sh 'bash "build.sh"'
 			}
 		}
 	}
