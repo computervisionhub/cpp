@@ -10,6 +10,13 @@ pipeline{
 				sh 'ls'
 				sh 'chmod +x cmake_build.sh'
 				sh 'bash cmake_build.sh'
+				archiveArtifacts artifacts: 'jenkins_calculator/build/calculator', fingerprint: true
+			}
+		}
+		stage('Test'){
+			steps{
+				sh 'echo "testing.."'
+				sh 'bash jenkins_calculator/build/calculator'
 			}
 		}
 	}
